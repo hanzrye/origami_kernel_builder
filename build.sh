@@ -13,22 +13,22 @@
 # Define some things
 # Kernel common
 export ARCH=arm64
-export localversion=-X1.6
+export localversion=-X1.0
 export LINKER="ld.lld"
 # Telegram API
 export SEND_TO_TG=1
-export chat_id=""
-export token=""
+export chat_id="-1002138024433"
+export token="7034672132:AAEbPrKulgk_oatBO3mAk0Ekhy3AimCXSFE"
 # Telegram && Output
-export kver="Beta"
-export CODENAME="even"
-export DEVICE="Realme C25 and Narzo50A (${CODENAME})"
-export BUILDER="Rem01"
-export BUILD_HOST="DigitalOcean"
+export kver="Alpha"
+export CODENAME="merlin"
+export DEVICE="Redmi Note 9 (${CODENAME})"
+export BUILDER="äerichāndesu"
+export BUILD_HOST="noticesa"
 export TIMESTAMP=$(date +"%Y%m%d")-$(date +"%H%M%S")
 export KBUILD_COMPILER_STRING=$(./clang/bin/clang -v 2>&1 | head -n 1 | sed 's/(https..*//' | sed 's/ version//')
-export FW="RUI2"
-export zipn="Liquid-${CODENAME}-${FW}-${TIMESTAMP}"
+export FW="aosp13r"
+export zipn="Daisy-${CODENAME}-${FW}-${TIMESTAMP}"
 # Needed by script
 export PATH="${PWD}/clang/bin:${PATH}"
 PROCS=$(nproc --all)

@@ -20,15 +20,15 @@ export SEND_TO_TG=1
 export chat_id="-1002138024433"
 export token="7034672132:AAEbPrKulgk_oatBO3mAk0Ekhy3AimCXSFE"
 # Telegram && Output
-export kver="Alpha"
+#export kver="Alpha"
 export CODENAME="merlin"
 export DEVICE="Redmi Note 9 (${CODENAME})"
 export BUILDER="äerichāndesu"
 export BUILD_HOST="noticesa"
 export TIMESTAMP=$(date +"%Y%m%d")-$(date +"%H%M%S")
 export KBUILD_COMPILER_STRING=$(./clang/bin/clang -v 2>&1 | head -n 1 | sed 's/(https..*//' | sed 's/ version//')
-export FW="aosp13r"
-export zipn="Daisy-${CODENAME}-${FW}-${TIMESTAMP}"
+export FW="MIUI&AOSP"
+export zipn="R-Daisy-${CODENAME}-${FW}-${TIMESTAMP}"
 # Needed by script
 export PATH="${PWD}/clang/bin:${PATH}"
 PROCS=$(nproc --all)
